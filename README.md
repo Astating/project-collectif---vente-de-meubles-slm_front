@@ -1,3 +1,17 @@
+# Front team's documentation
+
+March 7th :
+We spent some time on configuring the React App.
+Note for the team that will take over the Front side next week :
+1- Clone the repository
+2- Open your terminal, go on the folder, and type "npm install" before doing anything else. It will install the node-modules locally and will allow you to launch the app.
+3- Type "npm start" to launch the app and open a webpage to check that everything's good.
+
+Tip of the day: install the VSCode extension "Simple React Snippet"
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
