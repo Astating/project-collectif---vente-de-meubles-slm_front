@@ -9,6 +9,11 @@ Note for the team that will take over the Front side next week :
 
 Tip of the day: install the VSCode extension "Simple React Snippet"
 
+March 8th :
+We dispatched the work between the navbar, the main product space, and the footer.
+We mostly spent some time building the different components, and trying to style everything a bit.
+Some recommendation for the next days: we might consider moving every component in its own folder, for instace: have a Navbar folder containing the Navbar component + the Navbar CSS file.
+
 
 
 
