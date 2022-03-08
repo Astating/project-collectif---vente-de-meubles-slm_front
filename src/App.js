@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import Button from "./components/Button";
+import Navbar from "./components/Navbar";
 
 const Display = ({counter}) => <div>{counter}</div>
 
@@ -13,6 +14,7 @@ const App = () => {
 
   return (
     <>
+      <Navbar />
       <Display counter={counter}/>
       <Button
         onClick={increaseByOne}
