@@ -27,9 +27,9 @@ const App = () => {
       <Button
         onClick={decreaseByOne}
         text='minus'
-      />           
+      />
     </>
   )
 }
-
 export default App;
+
