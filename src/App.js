@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./components/Navbar/Navbar";
-import ProductCard from "./components/ProductCard"
+import ProductCard from "./components/ProductCard";
 // import Button from "./components/Button";
 import Footer from "./components/Footer";
 
