@@ -12,11 +12,6 @@ code {
     monospace;
 }
 
-.text-ellipsis {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 .propos{
   margin-top: 5rem;
   padding: 1rem;

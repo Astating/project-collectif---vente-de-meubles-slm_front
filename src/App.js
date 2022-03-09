@@ -1,16 +1,43 @@
 import React from "react";
 import Navigation from "./components/Navbar/Navbar";
-import ProductCard from "./components/ProductCard"
-// import Button from "./components/Button";
+import ProductGrid from "./components/ProductGrid"
 import Footer from "./components/Footer";
 
 
 const App = () => {
 
+  const catalogue = [
+    {
+      name: "Étagère en bois de sipalu",
+      type: "Étagère",
+      imgSrc: "https://www.lepetitflorilege.com/1742-large_default/etagere-ronde-en-bois.jpg",
+      price: "1700"
+      
+    },
+    { 
+      name:"Canapé cuire Ikéa",
+      type:"Canapé",
+      imgSrc:"https://www.lepetitflorilege.com/1742-large_default/etagere-ronde-en-bois.jpg",
+      price: "1205"
+    },
+    {
+      name:"Table en marbre",
+      type: "Table",
+      imgSrc: "https://www.lepetitflorilege.com/1742-large_default/etagere-ronde-en-bois.jpg",
+      price: "6000"
+    },
+    {
+      name: "Une chaise ordinaire",
+      type: "Chaise",
+      imgSrc: "https://www.lepetitflorilege.com/1742-large_default/etagere-ronde-en-bois.jpg",
+      price: "25"
+    }
+  ]
+
   return (
     <>
       <Navigation />
-      <ProductCard name="Étagère design en bois de sipalu" type="Étagère" imgSrc="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F44%2F42%2F16%2F4442160f7075914b80c234ded68013c0.jpg&sp=1646749985Ta83fd882e724b9d9396625b4e86f968772b4d962ac782fe3d1c9f60caffba4e0" price="140" currency="🐚" />
+      <ProductGrid catalogue={catalogue}/>
       <Footer />
     </>
   )
