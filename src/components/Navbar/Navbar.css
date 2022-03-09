@@ -1,9 +1,13 @@
+@font-face {
+  font-family: "roboto";
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+}
+
 .navbar {
     background-color: #AACDBE;
     justify-content: space-evenly;
+    font-family: 'roboto', serif;
+    font-weight: 300;
 }
 
-/* .search--button.variant {
-    outline: #F09595
-} */
 
