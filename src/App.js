@@ -1,12 +1,13 @@
 //cette page est l'équivalent du "Home" du site
 import React from "react";
-import Navigation from "./components/Navbar/Navbar";
+/* import Navigation from "./components/Navbar/Navbar"; */
 import ProductGrid from "./components/ProductGrid"
-import Footer from "./components/Footer";
-import BanniereHome from "./BanniereAccueil";
+/* import Footer from "./components/Footer"; */
+import BanniereHome from "./components/BanniereAccueil";
 
-const App = () => {
-  /*   const catalogue = [
+  const App = () => {
+    /*
+   const catalogue = [
     {
       name: "Étagère en bois de sipalu",
       type: "Étagère",
@@ -34,16 +35,8 @@ const App = () => {
     }
   ] */
 
-  return (
-    <>
-      <Navigation />
-      <BanniereHome />
-      {/* <ProductGrid catalogue={catalogue}/> */}
-      <Footer />
-    </>
-  )
-}
-export default App;
+
+
   const catalogue = [
     {
       id: 7,
@@ -91,5 +84,10 @@ export default App;
     }
   ];
 
-  return <ProductGrid catalogue={catalogue} />;
+return (
+  
+  <ProductGrid catalogue={catalogue} />,
+  <BanniereHome />
+)
+};
 export default App;
