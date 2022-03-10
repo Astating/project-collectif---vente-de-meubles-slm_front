@@ -1,35 +1,44 @@
 import React from "react";
-import { Table } from "react-bootstrap";
+import { Table, Button } from "react-bootstrap";
 
-export default function Admin() {
+export default function Admin(props) {
     return (
         <Table striped bordered hover>
             <thead>
                 <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Material</th>
+                    <th>Type</th>
+                    <th>Dimension</th>
+                    <th>Color</th>
+                    <th>Image</th>
+                    <th>Condition</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                    <td>{ props.id }</td>
+                    <td>{ props.title }</td>
+                    <td>{ props.description }</td>
+                    <td>{ props.material }</td>
+                    <td>{ props.type }</td>
+                    <td>{ props.dimension }</td>
+                    <td>{ props.color }</td>
+                    <td>{ props.image }</td>
+                    <td>{ props.condition }</td>
+                    <td>{ props.price }</td>
+                    <td>{ props.stock }</td>
+                    <td>
+                        <Button variant="warning">Change</Button>
+                        <Button variant="danger">Delete</Button>
+                    </td>
                 </tr>
-                <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                </tr>
-                <tr>
-                <td>3</td>
-                <td colSpan={2}>Larry the Bird</td>
-                <td>@twitter</td>
-                </tr>
+                
             </tbody>
         </Table>
     )
