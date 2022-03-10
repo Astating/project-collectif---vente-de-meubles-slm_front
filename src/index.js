@@ -9,11 +9,7 @@ import App from "./App.js"; //équivalent du home
 import Navigation from "./components/Navbar/Navbar";
 import Admin from "./components/Admin/Admin";
 import ProductPage from "./ProductPage";
-<<<<<<< HEAD
 import Footer from "./components/footer/Footer.js";
-=======
-import Footer from "./components/Footer.js";
->>>>>>> 019796a28eae5b3433337441a65c438d9efda1d9
 // import Favorites from './components/Favorites/Favorites';
 // import Cart from './components/Cart/Cart';
 // import Account from './components/Account/Account';
