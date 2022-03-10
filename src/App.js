@@ -3,7 +3,7 @@ import React from "react";
 /* import Navigation from "./components/Navbar/Navbar"; */
 import ProductGrid from "./components/ProductGrid"
 /* import Footer from "./components/Footer"; */
-import BanniereHome from "./components/BanniereAccueil";
+import BanniereHome from "./components/BanniereAccueil/BanniereAccueil";
 
   const App = () => {
     /*
