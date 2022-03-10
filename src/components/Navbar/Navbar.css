@@ -3,11 +3,22 @@
   src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 }
 
+.header-r {
+    display: flex;
+    position: absolute;
+    left: 80%;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+}
+
 .navbar {
     background-color: #AACDBE;
     justify-content: space-evenly;
     font-family: 'roboto', serif;
     font-weight: 300;
 }
-
-
