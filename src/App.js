@@ -38,7 +38,6 @@ const App = () => {
   return (
     <>
       <ProductGrid catalogue={catalogue}/>
-      <Footer />
     </>
   )
 }

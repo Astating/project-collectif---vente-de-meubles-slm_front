@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from './App'; //équivalent du home
 import Navigation from './components/Navbar/Navbar';
 import Admin from './components/Admin/Admin';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 // import Favorites from './components/Favorites/Favorites';
 // import Cart from './components/Cart/Cart';
 // import Account from './components/Account/Account';
