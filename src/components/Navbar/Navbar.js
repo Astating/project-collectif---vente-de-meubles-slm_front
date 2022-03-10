@@ -9,7 +9,13 @@ const Navigation = () => {
       <>
         <Navbar id="navbar" expand="lg">
           <Container fluid>
-              <Navbar.Brand href="#">SALEM</Navbar.Brand>
+              <Navbar.Brand href="#">
+                <img
+                src="../images/logo3.png" alt="Logo SLM"
+                width="111"
+                height="165"
+                />
+              </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
             {/* ci-dessous, le collapse sert si l'écran devient plus petit à regrouper la navbar et à faire un menu déroulant */}
               <Navbar.Collapse id="navbarScroll">
@@ -31,6 +37,8 @@ const Navigation = () => {
                   <Button id="search--button" variant="outline">Search</Button>
                   </Form>
                   
+                  <div class="header-r">
+
                   <Nav.Link href="/src/components/Favorites/Favorites.js">
                   <img
                     id="favorites--icon"
@@ -57,7 +65,8 @@ const Navigation = () => {
                   className="nav-link">
                   Admin
                 </Nav.Link>
-                  
+                  </div>
+
                 </Nav>
               </Navbar.Collapse>
         </Container>
