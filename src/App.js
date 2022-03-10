@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "./components/Navbar/Navbar";
 import ProductGrid from "./components/ProductGrid"
 import Footer from "./components/Footer";
-
+import BanniereHome from "./BanniereAccueil";
 
 const App = () => {
 
@@ -37,6 +37,7 @@ const App = () => {
   return (
     <>
       <Navigation />
+      <BanniereHome />
       <ProductGrid catalogue={catalogue}/>
       <Footer />
     </>
