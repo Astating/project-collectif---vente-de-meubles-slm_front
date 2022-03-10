@@ -8,14 +8,14 @@ export default function BanniereHome() {
       <Carousel className ="my-auto">
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-80 "
             src="../images/img11.jpg"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-80"
             src="../images/img22.jpg"
             alt="Second slide"
           />
