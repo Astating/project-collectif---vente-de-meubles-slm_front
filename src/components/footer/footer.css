@@ -1,21 +1,21 @@
-footer {
+.total-footer{
     position: absolute;
+    justify-content: end ;
+    top: 150vh;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgb(0, 162, 255);
-    height: 10em;
-    padding-top: 40px;
     color: rgb(0, 0, 0);
 }
 .footer-content{
-    margin-top: 35px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     background-color: rgb(251, 255, 202);
+    
 }
 .footer-content h3{
     height: 10px;

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import * as serviceWorker from "./serviceWorker";
+//ligne ci-dessous permet la navigation entre les pages
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //import des composants dans index pour la gestion du router
 import App from "./App.js"; //équivalent du home
