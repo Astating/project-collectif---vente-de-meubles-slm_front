@@ -14,7 +14,17 @@ We dispatched the work between the navbar, the main product space, and the foote
 We mostly spent some time building the different components, and trying to style everything a bit.
 Some recommendation for the next days: we might consider moving every component in its own folder, for instace: have a Navbar folder containing the Navbar component + the Navbar CSS file.
 
+March 10th :
+We struggled a lot with Git, so it was not a super productive day.
 
+However, we managed to set up the routing to be able to navigate from a page to another. You need to update the index.js with the appropriate pages and links, in the render.
+The App.js is the equivalent of the Home page of the Website.
+You don't need to call Navigation and Footer outside of index.js, otherwise it will be rendered 2 times on the screen.
+
+Currently we have an issue with rendering the carousel + the product grid ; it might be a CSS problem to fix.
+We are waiting for the database to implement the correct product data and stop hard-coding the data.
+
+Also, the header is a bit broken (doesn't fit on the screen anymore).
 
 
 # Getting Started with Create React App
