@@ -1,8 +1,6 @@
 import React from "react";
 import Navigation from "./components/Navbar/Navbar";
 import ProductGrid from "./components/ProductGrid"
-import Footer from "./components/Footer";
-
 
 const App = () => {
 
