@@ -1,7 +1,6 @@
 //cette page est l'équivalent du "Home" du site
 
 import React from "react";
-import Navigation from "./components/Navbar/Navbar";
 // import ProductCard from "./components/ProductCard";
 // import Button from "./components/Button";
 import ProductGrid from "./components/ProductGrid"
