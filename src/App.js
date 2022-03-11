@@ -1,7 +1,7 @@
 //cette page est l'équivalent du "Home" du site
 //pas besoin d'y importer la navbar ni le footer car ils sont déjà dans index pour la navigation
 import React from "react";
-import ProductGrid from "./components/ProductGrid"
+import ProductGrid from "./components/ProductGrid/ProductGrid"
 import BanniereHome from "./components/BanniereAccueil/BanniereAccueil";
 
   const App = () => {
@@ -9,7 +9,7 @@ import BanniereHome from "./components/BanniereAccueil/BanniereAccueil";
   const catalogue = [
     {
       id: 7,
-      title: "Djibouti",
+      title: "Djibouti long long lon long long lon",
       description:
         "Manguier (Mangifera Indica), Panneaux de fibres de moyenne densité (Bois mélangés) - Inde",
       image:

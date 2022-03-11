@@ -1,6 +1,5 @@
 import React from "react";
-// import "./components/ProductCard/ProductCard.css";
-import ProductCard from "./ProductCard/ProductCard";
+import ProductCard from "./ProductCard";
 import { Container, Row, Col } from "react-bootstrap";
 
 const ProductGrid = ({catalogue}) => {

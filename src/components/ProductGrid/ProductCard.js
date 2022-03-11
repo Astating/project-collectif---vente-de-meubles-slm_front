@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 import { Link } from "react-router-dom";
 
+import "./ProductCard.css";
+
 function ProductCard({ name, type, image, price, id, ...props }) {
   return (
     <Card className="mx-auto" as="figure" style={{ width: "18rem" }} border="danger">
