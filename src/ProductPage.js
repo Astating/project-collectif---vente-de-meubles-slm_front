@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Container, Col, Row } from "react-bootstrap";
+import "./ProductPage.css"
 
 const ProductPage = () => {
     const { id } = useParams();
@@ -55,7 +57,27 @@ const ProductPage = () => {
       
 
 
-    return (<h1>test {`${product.description}`}</h1>)
+    return (
+      <Container>
+      <Row>
+        <Col className="bg-warning image-container" md={8}><img id="product-image" alt="" src="https://www.pokepedia.fr/images/2/20/Salam%C3%A8che-PDMDX.png"/></Col>
+        <Col md={4}>
+          <aside>
+            <h3>{product.title}</h3>
+            <p>Dimensions: {product.dimension}</p>
+            <p>Type: {product.type}</p>
+            <p>Material: {product.material}</p>
+            <p>Color: {product.color}</p>
+            <p>Condition: {product.condition}</p>
+            <p>{product.stock ? "EN STOCK!" : "RUPTURE DE STOCK!"}</p>
+          </aside>
+        </Col>
+      </Row>
+      <Row>
+        <p>{product.description}</p>
+      </Row>
+    </Container>
+    )
 }
 
 export default ProductPage;
