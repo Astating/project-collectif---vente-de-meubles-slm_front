@@ -1,6 +1,8 @@
 import React from "react";
+//chaque fois qu'on utilise un élément de react bootstrap, il faut l'importer comme ci-dessous
 import { Table, Button } from "react-bootstrap";
 
+//component ci-dessous à compléter/modifier une fois le lien avec l'API/BDD fait pour que le tableau se remplisse dynamiquement
 export default function Admin(props) {
     return (
         <Table striped bordered hover>

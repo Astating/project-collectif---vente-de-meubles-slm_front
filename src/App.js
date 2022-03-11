@@ -1,8 +1,7 @@
 //cette page est l'équivalent du "Home" du site
+//pas besoin d'y importer la navbar ni le footer car ils sont déjà dans index pour la navigation
 import React from "react";
-/* import Navigation from "./components/Navbar/Navbar"; */
 import ProductGrid from "./components/ProductGrid"
-/* import Footer from "./components/Footer"; */
 import BanniereHome from "./components/BanniereAccueil/BanniereAccueil";
 
   const App = () => {
@@ -56,9 +55,10 @@ import BanniereHome from "./components/BanniereAccueil/BanniereAccueil";
 
 return (
   <>
-  <BanniereHome />
-  <ProductGrid catalogue={catalogue} />
+    <BanniereHome />
+    <ProductGrid catalogue={catalogue} />
   </>
 )
-};
+  };
+
 export default App;
