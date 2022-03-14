@@ -53,7 +53,7 @@ const Navigation = () => {
                     width="30"
                     height="20"
                   />{' '}Cart</Nav.Link>
-                    <Nav.Link href="/src/components/Account/Account"><img
+                    <Nav.Link href="/Account"><img
                     id="user--icon"
                     src="../images/pngegg.png" alt="user icon"
                     width="20"

@@ -21,6 +21,8 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="/admin" element={<Admin />} />
       <Route path="/product/:id" element={<ProductPage />} />
+      <Route path="/account" element={<Account/>} />
+
     </Routes>
     <Footer />
   </Router>,
