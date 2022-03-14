@@ -1,10 +1,11 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./BanniereAccueil.css";
 
 export default function BanniereHome() {
   return (
-    <div>
+    <div id="carousel">
       <Carousel className ="my-auto">
         <Carousel.Item>
           <img
