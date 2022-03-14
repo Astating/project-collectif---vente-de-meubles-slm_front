@@ -56,7 +56,8 @@ const ProductPage = () => {
         </Col>
       </Row>
       <Row>
-        <p>{product.description}</p>
+        {/*         <p>{product.description}</p>
+         */}{" "}
       </Row>
     </Container>
   );
