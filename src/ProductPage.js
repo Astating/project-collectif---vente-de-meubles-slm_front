@@ -9,13 +9,13 @@ const ProductPage = () => {
     // usestate est une variable qui regit les changements d'etat du param setData
     const [data, setData] = useState([])
     // Créer une constante qui fait une requete API pour récupérer les données 
-const catalog = () =>{
+
   const url = "http://localhost:8000/catalog";
   axios.get(url).then((res)=>{
     console.log(res.data)
     setData(res.data)
   })
-}
+
 
 
 /*    const catalogue = [
