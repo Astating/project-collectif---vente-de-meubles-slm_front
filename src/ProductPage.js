@@ -2,11 +2,23 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
 import "./ProductPage.css";
+import axios from "axios";
 
 const ProductPage = () => {
     const { id } = useParams();
+    // usestate est une variable qui regit les changements d'etat du param setData
+    const [data, setData] = useState([])
+    // Créer une constante qui fait une requete API pour récupérer les données 
+const catalog = () =>{
+  const url = "http://localhost:8000/catalog";
+  axios.get(url).then((res)=>{
+    console.log(res.data)
+    setData(res.data)
+  })
+}
 
-    const catalogue = [
+
+/*    const catalogue = [
         {
           id: 7,
           title: "Djibouti",
@@ -54,8 +66,9 @@ const ProductPage = () => {
       ];
 
       const [ product ] = catalogue.filter((n) => n.id.toString() === id)
-      
-
+ */      
+/* const [ product ] = catalog.filter((n) => n.id.toString() === id)
+ */
 
     return (
       <Container>
@@ -63,19 +76,19 @@ const ProductPage = () => {
         <Col className="bg-warning image-container" md={8}><img id="product-image" alt="" src="https://www.pokepedia.fr/images/2/20/Salam%C3%A8che-PDMDX.png"/></Col>
         <Col md={4}>
           <aside>
-            <h3>{product.title}</h3>
-            <p>Dimensions: {product.dimension}</p>
-            <p>Type: {product.type}</p>
-            <p>Material: {product.material}</p>
-            <p>Color: {product.color}</p>
-            <p>Condition: {product.condition}</p>
-            <p>{product.stock ? "EN STOCK!" : "RUPTURE DE STOCK!"}</p>
+             <h3>{catalog.title}</h3>
+             <p>Dimensions: {catalog.dimension}</p>
+            <p>Type: {catalog.type}</p>
+             <p>Material: {catalog.material}</p>
+            <p>Color: {catalog.color}</p>
+            <p>Condition: {catalog.condition}</p>
+            <p>{catalog.stock ? "EN STOCK!" : "RUPTURE DE STOCK!"}</p>
           </aside>
         </Col>
       </Row>
       <Row>
-        <p>{product.description}</p>
-      </Row>
+{/*         <p>{product.description}</p>
+ */}      </Row>
     </Container>
     )
 }
