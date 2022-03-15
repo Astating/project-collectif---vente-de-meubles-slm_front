@@ -10,9 +10,9 @@ const Navigation = () => {
           <Container fluid>
               <Navbar.Brand href="#">
                 <img
-                src="../images/logo3.png" alt="Logo SLM"
+                src="../images/logofinal.png" alt="Logo SLM"
                 width="111"
-                height="165"
+                height="110"
                 />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
