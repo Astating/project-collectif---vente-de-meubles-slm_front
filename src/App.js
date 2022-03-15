@@ -1,6 +1,6 @@
 //cette page est l'équivalent du "Home" du site
 //pas besoin d'y importer la navbar ni le footer car ils sont déjà dans index pour la navigation
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProductGrid from "./components/ProductGrid/ProductGrid";
 import BanniereHome from "./components/BanniereAccueil/BanniereAccueil";
 
@@ -67,7 +67,10 @@ const App = () => {
       material: "Leather",
     },
   ];
-  setItem(catalogue);
+  useEffect(() => {
+    setItem(catalogue);
+  });
+
   console.log(item);
 
   return (
