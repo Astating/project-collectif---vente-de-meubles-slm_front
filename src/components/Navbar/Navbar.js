@@ -47,7 +47,7 @@ const Navigation = () => {
                   />{' '}
                   Favorites
                 </Nav.Link>
-                    <Nav.Link href="/src/components/Cart/Cart.js"><img
+                    <Nav.Link href="/Cart"><img
                     id="cart--icon"
                     src="../images/cart_icon.png" alt="cart icon"
                     width="30"
