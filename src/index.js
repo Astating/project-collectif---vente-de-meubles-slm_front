@@ -9,11 +9,11 @@ import App from "./App.js"; //équivalent du home
 import Navigation from "./components/Navbar/Navbar";
 import Admin from "./components/Admin/Admin";
 import ProductPage from "./ProductPage";
+
 import Footer from "./components/footer/Footer.js";
 // import Favorites from './components/Favorites/Favorites';
-// import Cart from './components/Cart/Cart';
-// import Account from './components/Account/Account';
-
+import Cart from "./components/Cart/Cart.js";
+import Account from "./components/Account/Account.js";
 ReactDOM.render(
   <Router>
     <Navigation />
@@ -21,8 +21,8 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="/admin" element={<Admin />} />
       <Route path="/product/:id" element={<ProductPage />} />
-      <Route path="/account" element={<Account/>} />
-
+      <Route path="/account/" element={<Account />} />
+      <Route path="/cart/" element={<Cart />} />
     </Routes>
     <Footer />
   </Router>,
