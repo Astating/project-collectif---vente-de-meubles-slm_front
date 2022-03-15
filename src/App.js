@@ -1,11 +1,26 @@
 //cette page est l'équivalent du "Home" du site
 //pas besoin d'y importer la navbar ni le footer car ils sont déjà dans index pour la navigation
-import React from "react";
-import ProductGrid from "./components/ProductGrid/ProductGrid"
+import React, { useState } from "react";
+import ProductGrid from "./components/ProductGrid/ProductGrid";
 import BanniereHome from "./components/BanniereAccueil/BanniereAccueil";
 
-  const App = () => {
-
+const App = () => {
+  /*  const initialValue = [
+    {
+      id: 0,
+      title: "",
+      description: "",
+      image: "",
+      price: "",
+      dimension: "",
+      stock: true,
+      type: "",
+      color: "",
+      condition: "",
+      material: "",
+    },
+  ]; */
+  const [item, setItem] = useState({});
   const catalogue = [
     {
       id: 7,
@@ -50,15 +65,17 @@ import BanniereHome from "./components/BanniereAccueil/BanniereAccueil";
       color: "Yellow",
       condition: "Good",
       material: "Leather",
-    }
+    },
   ];
+  setItem(catalogue);
+  console.log(item);
 
-return (
-  <>
-    <BanniereHome />
-    <ProductGrid catalogue={catalogue} />
-  </>
-)
-  };
+  return (
+    <>
+      <BanniereHome />
+      <ProductGrid catalogue={catalogue} />
+    </>
+  );
+};
 
 export default App;
