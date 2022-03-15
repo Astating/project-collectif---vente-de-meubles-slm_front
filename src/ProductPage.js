@@ -41,7 +41,6 @@ const ProductPage = () => {
             <aside>
               {/*  <h3>{item.map((i) => i.title)}</h3> */}
               <h3>{product.title}</h3>
-              <h1>Hellp</h1>
               <p>Dimensions: {product.dimension}</p>
               <p>Type: {product.type}</p>
               <p>Material: {product.material}</p>
