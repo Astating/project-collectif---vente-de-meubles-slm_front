@@ -4,8 +4,8 @@ import { Table, Button } from "react-bootstrap";
 import axios from "axios";
 
 //component ci-dessous à compléter/modifier une fois le lien avec l'API/BDD fait pour que le tableau se remplisse dynamiquement
-export default function Admin(props) {
-  let url = "localhost:8000/admin";
+export default function Admin() {
+  let url = "http://192.168.1.11:8000/catalog/"
 
   return (
     <Table striped bordered hover>

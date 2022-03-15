@@ -34,12 +34,10 @@ const ProductPage = () => {
             <img
               id="product-image"
               alt=""
-              src="https://www.pokepedia.fr/images/2/20/Salam%C3%A8che-PDMDX.png"
-            />
+              src={`http://192.168.1.11:8000/media/${product.image}`} />
           </Col>
           <Col md={4}>
             <aside>
-              {/*  <h3>{item.map((i) => i.title)}</h3> */}
               <h3>{product.title}</h3>
               <p>Dimensions: {product.dimension}</p>
               <p>Type: {product.type}</p>
@@ -51,7 +49,7 @@ const ProductPage = () => {
           </Col>
         </Row>
         <Row>
-          <p>{item[2].description}</p>
+          <p>{product.description}</p>
         </Row>
       </Container>
     );

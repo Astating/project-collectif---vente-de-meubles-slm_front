@@ -10,7 +10,7 @@ const ProductGrid = ({catalogue}) => {
                 {catalogue.map((product) => {
                     return (
                     <Col key={`${product.id}`}xs={12} md={6} lg={4}>
-                    <ProductCard id={product.id} name={product.title} type={product.type} price={product.price} imgSrc={product.imgSrc}/>
+                    <ProductCard id={product.id} name={product.title} type={product.type} price={product.price} image={product.image}/>
                     </Col>
                     )
                 })}
