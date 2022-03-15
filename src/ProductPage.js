@@ -11,7 +11,7 @@ const ProductPage = () => {
   const [item, setItem] = useState([]);
   const [isLoading, setLoading] = useState(true);
   console.log("cata", item);
-  const url = "http://192.168.1.29:8000/catalog/";
+  const url = "http://192.168.1.11:8000/catalog/";
 
   useEffect(() => {
     axios.get(url).then((res) => {
@@ -44,6 +44,7 @@ const ProductPage = () => {
               <p>Material: {product.material}</p>
               <p>Color: {product.color}</p>
               <p>Condition: {product.condition}</p>
+              <p>Price: {product.price}</p>
               <p>{product.stock ? "EN STOCK!" : "RUPTURE DE STOCK!"}</p>
             </aside>
           </Col>
