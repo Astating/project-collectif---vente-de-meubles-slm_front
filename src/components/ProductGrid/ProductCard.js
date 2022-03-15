@@ -9,7 +9,7 @@ import "./ProductCard.css";
 function ProductCard({ name, type, image, price, id, ...props }) {
   return (
     <Card className="mx-auto" as="figure" style={{ width: "18rem" }} border="danger">
-      <Card.Img variant="top" src={image} />
+      <Card.Img variant="top" src={'https://kipli.com/fr/wp-content/uploads/2021/10/canape-site.jpg'} />
       <Card.Body as="figcaption" className="p-2">
         <Card.Title className="text-ellipsis" title={name}>
           <Link to={`product/${id}`}>{name}</Link>

@@ -3,3 +3,13 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
+/* Row correspond au background des produits (un espece de block jaune que j'arrivais pas à enlever) */
+.row{
+  background-color: white;
+}
+
+/* col correspond à toutes les cartes produits, j'ai juste mis un padding entre le carousel et les produits */
+.col-lg-4{
+  transform: translate(0px, 100px);
+}

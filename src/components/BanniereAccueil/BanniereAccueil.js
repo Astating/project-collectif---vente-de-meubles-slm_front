@@ -1,13 +1,15 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./BanniereAccueil.css";
 
 export default function BanniereHome() {
   return (
-    <div>
+    <div class="carouselSize">
       <Carousel className ="my-auto">
         <Carousel.Item>
           <img
+            
             className="d-block w-80 "
             src="../images/img11.jpg"
             alt="First slide"

@@ -7,7 +7,7 @@ export default function Footer() {
         <div class="footer-content">
             
             <h3>About us</h3>
-            <p>we are a small company created in 2022</p>
+            <p>We are a small company created in 2022</p>
         </div>
         <div class="footer-bottom">
             <p>copyright &copy; <a href="#">Salem</a></p>
