@@ -17,7 +17,7 @@ function ProductCard({ name, type, image, price, id, ...props }) {
         <Stack direction="horizontal" gap="2">
           <Card.Subtitle className="text-muted">{type}</Card.Subtitle>
           <Card.Subtitle className="ms-auto">{price + " 🐚"}</Card.Subtitle>
-          <Button variant="success">BUY!</Button>
+          <Button variant="success">ADD!</Button>
         </Stack>
       </Card.Body>
     </Card>

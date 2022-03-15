@@ -1,8 +1,10 @@
 import React from "react";
-import {Card,Button,} from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 
-export default function Cart () {
-return (
+export default function Cart() {
+  // du code js ou autre condition blablabla
+  return (
+    // html + js
 
   
 /*indication du nombre de produit + tableau qui donne la valeur du produit et la quantité et un bouton pour confirmé la commande */ 
