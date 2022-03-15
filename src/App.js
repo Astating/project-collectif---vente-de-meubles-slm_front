@@ -24,7 +24,7 @@ const App = () => {
   const catalogue = [
     {
       id: 7,
-      title: "Djibouti long long lon long long lon",
+      title: "Djibouti",
       description:
         "Manguier (Mangifera Indica), Panneaux de fibres de moyenne densité (Bois mélangés) - Inde",
       image:
