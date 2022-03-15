@@ -44,6 +44,7 @@ const ProductPage = () => {
               <p>Material: {product.material}</p>
               <p>Color: {product.color}</p>
               <p>Condition: {product.condition}</p>
+              <p>Price: {product.price}</p>
               <p>{product.stock ? "EN STOCK!" : "RUPTURE DE STOCK!"}</p>
             </aside>
           </Col>
