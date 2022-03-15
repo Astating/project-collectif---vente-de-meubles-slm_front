@@ -10,7 +10,7 @@ import { useParams } from "react-router-dom";
 const App = () => {
   const [catalogue, setItem] = useState([]);
   const [isLoading, setLoading] = useState(true);
-  const url = "http://192.168.1.29:8000/catalog/";
+  const url = "http://192.168.1.11:8000/catalog/";
 
   useEffect(() => {
     axios.get(url).then((res) => {

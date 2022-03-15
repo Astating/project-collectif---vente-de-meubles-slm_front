@@ -3,12 +3,8 @@ import './footer.css'
 
 export default function Footer() {
     return (
-        <div class="total-footer">
-        <div class="footer-content">
-            
-            <h3>About us</h3>
-            <p>We are a small company created in 2022</p>
-        </div>
+     
+       
         <div class="footer-bottom">
             <p>copyright &copy; <a href="#">Salem</a></p>
                     <div class="footer-menu">
@@ -19,7 +15,7 @@ export default function Footer() {
                       </ul>
                     </div>
         </div>
-        </div>
+      
     )
 
 }
