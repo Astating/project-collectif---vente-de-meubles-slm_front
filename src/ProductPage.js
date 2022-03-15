@@ -8,6 +8,10 @@ const ProductPage = () => {
   //const { id } = useParams();
   /*   const [product] = catalog.filter((n) => n.id.toString() === id);
   console.log([product]); */
+
+  /* Déclarer une variable State de React 
+  (à gauche : variable qui correspond à la valeur initale; 
+    à droite : méthode qui gère la réassignation de valeur)*/
   const [item, setItem] = useState([]);
   console.log("cata", item);
   const url = "http://192.168.1.29:8000/catalog/";
@@ -15,6 +19,7 @@ const ProductPage = () => {
   useEffect(() => {
     let cancel = false;
     axios.get(url).then((res) => {
+      // on vérifie si cancel est true, si oui, fait rien. si non, lance le code.
       if (cancel) return;
       setItem(res.data);
     });
@@ -35,21 +40,22 @@ const ProductPage = () => {
         </Col>
         <Col md={4}>
           <aside>
-            {/* <h3>{item.map((i) => i.title)}</h3> */}
-            <h2>Hello</h2>
-
-            {/*             <p>Dimensions: {product.dimension}</p>
-            <p>Type: {product.type}</p>
-            <p>Material: {product.material}</p>
-            <p>Color: {product.color}</p>
-            <p>Condition: {product.condition}</p>
-            <p>{product.stock ? "EN STOCK!" : "RUPTURE DE STOCK!"}</p> */}
+            {/*  <h3>{item.map((i) => i.title)}</h3> */}
+            <h3>{item[2].title}</h3>
+            <h1>Hellp</h1>
+            <p>Dimensions: {item[2].dimension}</p>
+            <p>Type: {item[2].type}</p>
+            <p>Material: {item[2].material}</p>
+            <p>Color: {item[2].color}</p>
+            <p>Condition: {item[2].condition}</p>
+            <p>{item[2].stock ? "EN STOCK!" : "RUPTURE DE STOCK!"}</p>
           </aside>
         </Col>
       </Row>
-      <Row>{/* <p>{product.description}</p> */}</Row>
+      <Row>
+        <p>{item[2].description}</p>
+      </Row>
     </Container>
   );
-  /*   } */
 };
 export default ProductPage;

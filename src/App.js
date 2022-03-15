@@ -67,9 +67,9 @@ const App = () => {
       material: "Leather",
     },
   ];
-  useEffect(() => {
+  /*   useEffect(() => {
     setItem(catalogue);
-  });
+  }); */
 
   console.log(item);
 
