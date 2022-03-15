@@ -47,13 +47,13 @@ const Navigation = () => {
                   />{' '}
                   Favorites
                 </Nav.Link>
-                    <Nav.Link href="/src/components/Cart/Cart.js"><img
+                    <Nav.Link href="/Cart"><img
                     id="cart--icon"
                     src="../images/cart_icon.png" alt="cart icon"
                     width="30"
                     height="20"
                   />{' '}Cart</Nav.Link>
-                    <Nav.Link href="/src/components/Account/Account"><img
+                    <Nav.Link href="/Account"><img
                     id="user--icon"
                     src="../images/pngegg.png" alt="user icon"
                     width="20"
