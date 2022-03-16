@@ -6,34 +6,41 @@ import axios from "axios";
 import { Alert } from "react-bootstrap";
 
 const CatalogForm = () => {
-  const [formValue, setformValue] = useState({ key: "" });
+  const [formValue, setformValue] = useState({ name: "" });
   const url = "http://192.168.1.11:8000/catalog/";
+
+  /*  const handleEvent = (e) => {
+    e.preventDefault();
+  };
 
   const handleSubmit = (e) => {
     axios
       .post(url, {
         ...formValue,
-        [e.target.key]: e.target.value,
+        [e.target.name]: e.target.value,
       })
-      .then(
-        (res) => {
-          console.log(res);
-        },
-        (err) => {
-          console.log(err);
-        }
-      );
-  };
+      .catch((err) => {
+        console.log(err);
+      })
+      .then((res) => {
+        console.log(res);
+      });
+  }; */
 
   const handleChange = (e) => {
     setformValue({
       ...formValue,
-      [e.target.key]: e.target.value,
+      [e.target.name]: e.target.value,
     });
   };
 
   return (
-    <Form method="POST" action="http://192.168.1.11:8000/catalog/">
+    //POST method to add new items to the database.
+    <Form
+      method="POST"
+      action="http://192.168.1.11:8000/catalog/"
+      /* onSubmit={handleEvent} */
+    >
       <p>Add an Item</p>
       <input
         type="text"
@@ -94,14 +101,12 @@ const CatalogForm = () => {
       />
       <input
         type="text"
-        name="type"
+        name="material"
         placeholder="add a material"
         value={formValue.material}
         onChange={handleChange}
       />
-      <button type="submit" onClick={handleSubmit}>
-        Submit
-      </button>
+      <button type="submit" /* onClick={handleSubmit} */>Submit</button>
     </Form>
   );
 };
