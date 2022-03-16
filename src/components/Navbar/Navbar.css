@@ -13,7 +13,14 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 50%;
+    left: 40%;
+    border-radius: 10px;
+    background: #608575;
+    padding: 20px;
+    /* width: 200px;
+    height: 20px;   */
+
+      
 }
 
 .navbar {
@@ -22,3 +29,4 @@
     font-family: 'roboto', serif;
     font-weight: 300;
 }
+

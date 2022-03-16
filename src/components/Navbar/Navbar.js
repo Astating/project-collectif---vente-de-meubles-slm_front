@@ -6,8 +6,8 @@ import './Navbar.css'
 const Navigation = () => {
     return (
       <>
-        <Navbar id="navbar" expand="lg">
-          <Container fluid>
+        <Navbar  id="navbar" expand="lg" fixed='top' bg='blue'>
+          <Container>
               <Navbar.Brand href="#">
                 <img
                 src="../images/logofinal.png" alt="Logo SLM"
@@ -26,14 +26,15 @@ const Navigation = () => {
 
                 <Nav.Link href="/">Home</Nav.Link>
                 
-                  <Form className="d-flex">
-                  <FormControl
+                  <Form className="d-flex" variant="justify-content-end">
+                  <FormControl 
                     type="search"
                     placeholder="Search"
-                    className="me-2"
+                    className="me-auto"
                     aria-label="Search"
                   />
-                  <Button id="search--button" variant="outline">Search</Button>
+
+                
                   </Form>
                   
                   <div class="header-r">
@@ -59,9 +60,13 @@ const Navigation = () => {
                     width="20"
                     height="20"
                 />{' '}Account</Nav.Link>
-                <Nav.Link
-                  href="/admin"
-                  className="nav-link">
+                <Nav.Link href="/admin"><img
+                  id="admin--icon"
+                  src="../images/adminpng.png" alt="admin icon"
+                  width="30"
+                  height="20"
+                  
+                  />
                   Admin
                 </Nav.Link>
                   </div>
