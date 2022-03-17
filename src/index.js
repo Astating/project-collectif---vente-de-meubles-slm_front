@@ -25,6 +25,7 @@ ReactDOM.render(
       <Route path="/account/" element={<Account />} />
       <Route path="/cart/" element={<Cart />} />
       <Route path="/form/" element={<CatalogForm />} />
+      
     </Routes>
     <Footer />
   </Router>,
