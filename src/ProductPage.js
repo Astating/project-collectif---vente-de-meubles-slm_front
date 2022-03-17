@@ -34,7 +34,8 @@ const ProductPage = () => {
             <img
               id="product-image"
               alt=""
-              src={`http://192.168.1.11:8000/media/${product.image}`} />
+              src={`http://192.168.1.11:8000/media/${product.image}`}
+            />
           </Col>
           <Col md={4}>
             <aside>
