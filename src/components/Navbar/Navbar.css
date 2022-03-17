@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
   font-family: "roboto";
   src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 }
@@ -7,12 +7,13 @@
     display: flex;
     position: absolute;
     left: 80%;
+    margin-left: auto;
 }
 
 .d-flex {
     display: contents;
     justify-content: center;
-    position: absolute;
+    
     left: 25%;
     border-radius: 100px;
     background: #608575;
@@ -31,4 +32,8 @@
     font-family: 'roboto', serif;
     font-weight: 300;
     overflow: auto;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f1f677814b04a405b2e888b698bc1ee79697b8b0

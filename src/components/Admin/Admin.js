@@ -5,6 +5,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CatalogForm from "./Form";
 import { Link } from "react-router-dom";
+import catalogues from "./Form"
+
 
 //component ci-dessous à compléter/modifier une fois le lien avec l'API/BDD fait pour que le tableau se remplisse dynamiquement
 export default function Admin() {
@@ -12,6 +14,7 @@ export default function Admin() {
   const [isLoading, setLoading] = useState(true);
   const [form, setForm] = useState(false);
   const url = "http://192.168.1.11:8000/catalog/";
+  
   /*  const getForm = () => {
     //setForm(true);
     return <CatalogForm />;
@@ -29,6 +32,21 @@ export default function Admin() {
       setLoading(false);
     });
   }, []);
+  
+  function deleteRow(id, e) { 
+    axios.delete(`http://192.168.1.11:8000/catalog/${id}`)
+    .then(res => {  
+      console.log(res)
+      console.log(res.data)
+      const nweCatalogue = catalogue.filter(item => item.id !== id);  
+       
+      setItem(nweCatalogue);
+    
+       
+      })
+    }
+    
+  
 
   /*   const { id } = useParams();
   const [product] = item.filter((n) => n.id.toString() === id); */
@@ -86,7 +104,8 @@ export default function Admin() {
                     {/* <Link to="/form"> */}
                     <Button variant="warning">Change</Button>
                     {/* </Link> */}
-                    <Button variant="danger">Delete</Button>
+                    
+                    <Button variant="danger" onClick={(e) => deleteRow(product.id, e)} >Delete</Button>
                   </td>
                 </tr>
               </tbody>
