@@ -1,4 +1,12 @@
-/* .Cadre {
-    float: none;
-    margin: 0 auto;
+.signIn{
+    width: 500px;
+}
+
+.signUp{
+    padding: 2rem;
+    width: 500px;
+}
+ 
+/* .form-control{
+    
 } */
