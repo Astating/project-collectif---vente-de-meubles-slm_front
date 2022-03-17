@@ -6,8 +6,8 @@ import './Navbar.css'
 const Navigation = () => {
     return (
       <>
-        <Navbar  id="navbar" expand="lg" fixed='top' bg='blue'>
-          <Container>
+        <Navbar  id="navbar" expand="lg" fixed='top'>
+          <Container className = "container">
               <Navbar.Brand href="#">
                 <img
                 src="../images/logofinal.png" alt="Logo SLM"
