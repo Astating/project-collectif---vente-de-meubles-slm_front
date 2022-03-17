@@ -36,7 +36,6 @@ const Navigation = () => {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button id="search--button" variant="outline">Search</Button>
                   </Form>
                   
                   <div class="header-r">
