@@ -16,6 +16,7 @@ const Navigation = () => {
                 />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
+              
             {/* ci-dessous, le collapse sert si l'écran devient plus petit à regrouper la navbar et à faire un menu déroulant */}
               <Navbar.Collapse id="navbarScroll">
                 <Nav
