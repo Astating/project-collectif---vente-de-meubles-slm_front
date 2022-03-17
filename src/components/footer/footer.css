@@ -1,4 +1,5 @@
 .total-footer{
+    display: contents;
     position: absolute;
     justify-content: end ;
     top: 200vh;

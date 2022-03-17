@@ -30,7 +30,7 @@ const ProductPage = () => {
     return (
       <Container>
         <Row>
-          <Col className="bg-warning image-container" md={8}>
+          <Col className="image-container" md={8}>
             <img
               id="product-image"
               alt=""
