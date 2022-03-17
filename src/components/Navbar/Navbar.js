@@ -6,9 +6,14 @@ import './Navbar.css'
 const Navigation = () => {
     return (
       <>
+<<<<<<< HEAD
+        <Navbar  id="navbar" expand="lg" fixed='top'>
+          <Container className = "container">
+=======
         <Navbar id="navbar" expand="lg" fixed='top' bg='blue'>
           <Container fluid>
 
+>>>>>>> f1f677814b04a405b2e888b698bc1ee79697b8b0
               <Navbar.Brand href="#">
               <Nav.Link href="/"> <img
                 src="../images/logofinal.png" alt="Logo SLM"
