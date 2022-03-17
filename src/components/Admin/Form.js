@@ -8,7 +8,7 @@ import { Alert } from "react-bootstrap";
 const CatalogForm = () => {
   const [formValue, setformValue] = useState({ name: "" });
   const [selectedFile, setSelectedFile] = useState(null);
-
+  const [img, setImg] = useState(null);
   const url = "http://192.168.1.11:8000/catalog/";
 
   /*  const changeImageHandler = (event) => {
@@ -23,13 +23,32 @@ const CatalogForm = () => {
     });
   };
 
+  const handleImageChange = (e) => {
+    setImg({
+      image: e.target.files[0],
+    });
+  };
+
+  /* const handleSubmit = (e) => {
+    e.preventDefault();
+    let form_data = new FormData();
+    form_data.append("image", img);
+    axios
+      .post(url, form_data, {
+        "content-type": "multipart/form-data",
+      })
+      .then((res) => {
+        console.log(res.data);
+      });
+  }; */
+
   return (
     //POST method to add new items to the database.
     <>
       <Form
         method="POST"
         action="http://192.168.1.11:8000/catalog/"
-        /* onSubmit={handleEvent} */
+        /* onSubmit={handleSubmit} */
       >
         <p>Add an Item</p>
         <input
@@ -118,9 +137,9 @@ const CatalogForm = () => {
           accept="image/png, image/jpeg"
           placeholder="add an image"
           value={formValue.image}
-          //onChange={handleChange}
-          onFileSelectSuccess={(file) => setSelectedFile(file)}
-          onFileSelectError={({ error }) => alert(error)}
+          onChange={handleImageChange}
+          /* onFileSelectSuccess={(file) => setSelectedFile(file)}
+          onFileSelectError={({ error }) => alert(error)} */
         />
         <button type="submit" /* onClick={handleSubmit} */>Submit</button>
       </Form>
