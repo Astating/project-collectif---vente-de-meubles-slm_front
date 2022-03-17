@@ -15,6 +15,7 @@ import Footer from "./components/footer/Footer.js";
 import Cart from "./components/Cart/Cart.js";
 import Account from "./components/Account/Account.js";
 import CatalogForm from "./components/Admin/Form";
+
 ReactDOM.render(
   <Router>
     <Navigation />

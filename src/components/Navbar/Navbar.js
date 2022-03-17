@@ -1,19 +1,26 @@
 import React from "react"
-import { Navbar, Container, Nav, Form, FormControl } from "react-bootstrap"
+import { Navbar, Container, Nav, Form, FormControl, Button } from "react-bootstrap"
 import './Navbar.css'
 
 
 const Navigation = () => {
     return (
       <>
+<<<<<<< HEAD
         <Navbar  id="navbar" expand="lg" fixed='top'>
           <Container className = "container">
+=======
+        <Navbar id="navbar" expand="lg" fixed='top' bg='blue'>
+          <Container fluid>
+
+>>>>>>> f1f677814b04a405b2e888b698bc1ee79697b8b0
               <Navbar.Brand href="#">
-                <img
+              <Nav.Link href="/"> <img
                 src="../images/logofinal.png" alt="Logo SLM"
                 width="100"
                 height="100"
                 />
+                </Nav.Link>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
             {/* ci-dessous, le collapse sert si l'écran devient plus petit à regrouper la navbar et à faire un menu déroulant */}
@@ -24,17 +31,16 @@ const Navigation = () => {
                   navbarScroll
               >
 
-                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/">.</Nav.Link>
                 
-                  <Form className="d-flex" variant="justify-content-end">
-                  <FormControl 
+                  <Form className="d-flex">
+                  <FormControl
+                  
                     type="search"
                     placeholder="Search"
-                    className="me-auto"
+                    className="me-2"
                     aria-label="Search"
                   />
-
-                
                   </Form>
                   
                   <div class="header-r">
@@ -64,8 +70,7 @@ const Navigation = () => {
                   id="admin--icon"
                   src="../images/adminpng.png" alt="admin icon"
                   width="30"
-                  height="20"
-                  
+                  height="20"                
                   />
                   Admin
                 </Nav.Link>
