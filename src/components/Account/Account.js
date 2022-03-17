@@ -3,7 +3,26 @@ import React from "react";
 //import {form.Group} from "react-bootstrap"
 import { Form, Col, Row, Button } from "react-bootstrap";
 import { FloatingLabel } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 export default function Account (){
+
+  const [user, setUser] = useState([]);
+  const [isLoading, setLoading] = useState(true);
+  const url = "http://192.168.1.11:8000/user/";
+
+  useEffect(() => {
+    axios.get(url).then((res) => {
+      // on vérifie si cancel est true, si oui, fait rien. si non, lance le code.
+      setUser(res.data);
+      setLoading(false);
+    });
+  }, []);
+
+  if (isLoading) {
+    return <h1>Loading...</h1>;
+  } else {
     return (
     <Form>
           <Row className="mb-3">
@@ -36,5 +55,5 @@ export default function Account (){
     Submit
   </Button></center>
 </Form>
-    )
+    )}
 }
