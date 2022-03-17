@@ -61,9 +61,12 @@ const Navigation = () => {
                     width="20"
                     height="20"
                 />{' '}Account</Nav.Link>
-                <Nav.Link
-                  href="/admin"
-                  className="nav-link">
+                <Nav.Link href="/admin"><img
+                  id="admin--icon"
+                  src="../images/adminpng.png" alt="admin icon"
+                  width="30"
+                  height="20"                
+                  />
                   Admin
                 </Nav.Link>
                   </div>
