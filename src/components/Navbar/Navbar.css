@@ -10,11 +10,8 @@
     margin-left: auto;
 }
 
-
- .d-flex {
-     margin-left: 30;
-     margin-right: 30px;
-    display: flex;
+.d-flex {
+    display: contents;
     justify-content: center;
     
     left: 25%;
@@ -23,14 +20,15 @@
     padding: 10px;
     width: 800px;
     
-} 
+    
+}
 
 .form-control{
     border-radius: 20rem;
 }
 
 .navbar {
-    position: fixed;
+    position: unset;
     background-color: #AACDBE;
     justify-content: space-evenly;
     font-family: 'roboto', serif;

@@ -11,12 +11,11 @@ const Navigation = () => {
               <Navbar.Brand href="#">
                 <img
                 src="../images/logofinal.png" alt="Logo SLM"
-                width="111"
-                height="110"
+                width="100"
+                height="100"
                 />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
-              
             {/* ci-dessous, le collapse sert si l'écran devient plus petit à regrouper la navbar et à faire un menu déroulant */}
               <Navbar.Collapse id="navbarScroll">
                 <Nav
