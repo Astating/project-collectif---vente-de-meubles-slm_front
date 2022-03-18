@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-
-/* .total-footer{
-=======
 .total-footer{
     display: contents;
->>>>>>> 29b55eab2b7faca147987f00d06f49f7e06b6fd1
     position: absolute;
     justify-content: end ;
     top: 200vh;
@@ -12,18 +7,9 @@
     left: 0;
     right: 0;
     color: rgb(0, 0, 0);
-<<<<<<< HEAD
-  
-    
-} */
-/* .footer-content{
-  
-    margin-top: 40px;
-=======
 }
 .footer-content{
     margin-top: 100px;
->>>>>>> 29b55eab2b7faca147987f00d06f49f7e06b6fd1
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +44,7 @@ float: left;
     text-transform: capitalize;
 }
 .footer-bottom p a{
-  color:#f0f0f0;
+  color:darkslategray;
   font-size: 16px;
   text-decoration: none;
 }
@@ -82,7 +68,7 @@ padding-right: 10px;
 display: block;
 }
 .footer-menu ul li a{
-  color: #ebebeb;
+  color: darkslategray;
   text-decoration: none;
 }
 .footer-menu ul li a:hover{

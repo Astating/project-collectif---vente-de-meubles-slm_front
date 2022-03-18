@@ -8,7 +8,7 @@ import "./ProductCard.css";
 
 function ProductCard({ name, type, image, price, id, ...props }) {
   return (
-    <Card className="mx-auto" as="figure" style={{ width: "18rem" }} border="danger">
+    <Card className="mx-auto" as="figure" style={{ width: "18rem" }} >
       <Card.Img variant="top" src={`http://192.168.1.11:8000/media/${image}`} />
       <Card.Body as="figcaption" className="p-2">
         <Card.Title className="text-ellipsis" title={name}>
