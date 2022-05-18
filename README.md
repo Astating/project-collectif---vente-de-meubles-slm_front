@@ -1,5 +1,7 @@
 Lien vers la partie back-end du projet : [Sauver les meubles (back)](https://github.com/Astating/project-collectif---vente-de-meubles-slm_back?organization=Astating&organization=Astating)
 
+<details open><summary><h2>Preview</h2></summary><img src="https://i.ibb.co/4ghCWV8/frontpage.png" alt="frontpage" border="0"><img src="https://i.ibb.co/311zXyh/productpage.png" alt="productpage" border="0"></details>
+
 # Front team's documentation
 
 Furniture website project - Front part.
